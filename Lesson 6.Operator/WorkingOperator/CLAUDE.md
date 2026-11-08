@@ -1,6 +1,10 @@
 # CLAUDE.md
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+Використовуй короткі відповіді, без зайвого коду, лише важлива інформація!
+
+Перед рефакторингом і роботою з кодом завжди читай файл @spec.md
+
 
 ## Commands
 
