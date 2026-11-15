@@ -26,6 +26,23 @@
                     Content="Прочитати вміст"
                     Margin="10 0 0 0" Click="btnReadFile_Click"/>
         </Grid>
+
+        <ListBox Grid.Row="1" Name="galleryList" Margin="10"
+                 ScrollViewer.HorizontalScrollBarVisibility="Disabled">
+            <ListBox.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <WrapPanel />
+                </ItemsPanelTemplate>
+            </ListBox.ItemsPanel>
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding}" Width="150" Height="150"
+                           Stretch="UniformToFill" Margin="5"/>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        
         
     </Grid>
 </Window>
