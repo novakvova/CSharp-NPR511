@@ -16,28 +16,38 @@ namespace WpfAppImageView
             InitializeComponent();
         }
 
-        private void btnReadFile_Click(object sender, RoutedEventArgs e)
+        // async void лише для обробника події WPF; решта коду використовує Task
+        private async void btnReadFile_Click(object sender, RoutedEventArgs e)
         {
             string dirPath = txtPath.Text;
-            if(Directory.Exists(dirPath) ==false)
+            if (Directory.Exists(dirPath) == false)
             {
                 MessageBox.Show("Папку не знайдено");
                 return;
             }
-            //тут id поток = 2
-            Thread thread = new Thread(JobReadImages);
-            thread.Start(dirPath);
+
+            try
+            {
+                // Фонова робота у пулі потоків; UI-потік не блокується
+                List<BitmapImage> images = await Task.Run(() => LoadImages(dirPath));
+
+                // Після await ми знову в UI-потоці, тому Dispatcher.Invoke не потрібен
+                galleryList.ItemsSource = images;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Помилка читання папки: " + ex.Message);
+            }
         }
 
-        private void JobReadImages(object path)
+        // Не звертається до елементів інтерфейсу, тому викликається з фонового потоку
+        private static List<BitmapImage> LoadImages(string path)
         {
-            //Тут буде інший ідентифікатор потоку
-            //Наприклад 4
             //Спеціальний клас для діагностики і роботи з часом
-            Stopwatch sw = new Stopwatch();
-            sw.Start();
+            Stopwatch sw = Stopwatch.StartNew();
+
             //Отримую із папки список файлів
-            var files = Directory.GetFiles(path as string);
+            string[] files = Directory.GetFiles(path);
             var images = new List<BitmapImage>();
 
             foreach (var file in files)
@@ -58,14 +68,6 @@ namespace WpfAppImageView
                     //MessageBox.Show("Проблема читання файлу " + file);
                 }
             }
-            //У наш ListBox ми передаємо дані
-            //Дані мають оброблятися через ItemsPanelTemplate
-            //Кожен елемент має розташовуватися у WrapPanel
-            //Коли він потрапляє у WrapPanell
-            //Йому надається значення 
-            //<Image Source="{Binding}" Width="150" Height="150"
-            //  Stretch = "UniformToFill" Margin = "5" />
-            //Замість {Binding} буде підставлятися var bitmap = new BitmapImage();
 
             sw.Stop();
             // Get the elapsed time as a TimeSpan value.
@@ -77,11 +79,7 @@ namespace WpfAppImageView
                 ts.Milliseconds / 10);
             //MessageBox.Show("RunTime " + elapsedTime);
 
-            Dispatcher.Invoke(() =>
-            {
-                galleryList.ItemsSource = images;
-            });
-            
+            return images;
         }
     }
 }
