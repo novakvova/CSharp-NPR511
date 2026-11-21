@@ -1,3 +1,4 @@
 <Solution>
+  <Project Path="MyGenerics/MyGenerics.csproj" Id="30e42ecf-a698-4bdf-965e-b4ba8003124e" />
   <Project Path="WpfAppImageView/WpfAppImageView.csproj" />
 </Solution>

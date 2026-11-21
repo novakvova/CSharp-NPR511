@@ -1,0 +1,17 @@
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\bin\Debug\net9.0\MyGenerics.exe
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\bin\Debug\net9.0\MyGenerics.deps.json
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\bin\Debug\net9.0\MyGenerics.runtimeconfig.json
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\bin\Debug\net9.0\MyGenerics.runtimeconfig.dev.json
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\bin\Debug\net9.0\MyGenerics.dll
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\bin\Debug\net9.0\MyGenerics.pdb
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\obj\Debug\net9.0\MyGenerics.GeneratedMSBuildEditorConfig.editorconfig
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\obj\Debug\net9.0\MyGenerics.AssemblyInfoInputs.cache
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\obj\Debug\net9.0\MyGenerics.AssemblyInfo.cs
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\obj\Debug\net9.0\MyGenerics.csproj.CoreCompileInputs.cache
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\obj\Debug\net9.0\MyGenerics.sourcelink.json
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\obj\Debug\net9.0\MyGenerics.dll
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\obj\Debug\net9.0\refint\MyGenerics.dll
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\obj\Debug\net9.0\MyGenerics.pdb
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\obj\Debug\net9.0\MyGenerics.genruntimeconfig.cache
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\obj\Debug\net9.0\ref\MyGenerics.dll
+D:\Study\2026\38.NET Core Sharp NPR511\Projects\Lesson 7.Forms\WpfAppImageView\MyGenerics\obj\Debug\net9.0\MyGenerics.csproj.Up2Date
