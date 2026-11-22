@@ -50,6 +50,7 @@ namespace WpfAppImageView
                     bitmap.DecodePixelWidth = 300;
                     bitmap.CacheOption = BitmapCacheOption.OnLoad; //завантажуємо у вікно
                     bitmap.EndInit();
+                    bitmap.Freeze(); //Для доступності в UI - основному потоці
                     images.Add(bitmap);
                 }
                 catch
