@@ -185,6 +185,7 @@
             </Button>
             <Button Grid.Column="3" Grid.Row="4" Margin="2" 
                     Background="#FF2D2D2D" Foreground="White" 
+                    Click="Button_Operation_Click"
                     FontSize="18">
                 <Button.Content>
                     <TextBlock>+</TextBlock>
